@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Administrador</title>
+    <link rel="stylesheet" href="css/administrador.css">
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swp");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9E79F ;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FAD7A0 ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    margin-top: 20px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #EDBB99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6d4928;
+}
+
+.hidden {
+    display: none;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="profile-info" id="modoVista">
+            <div class="profile-photo">
+                <img src="images/services/administrador.jpg" alt="Foto de perfil">
+            </div>
+            <h2 id="nombre">Nombre: Juan Pérez</h2>
+            <p id="profesion">Profesión: Administrador</p>
+            <p id="telefono">Teléfono: 123456789</p>
+            <p id="email">Correo electrónico: ejemplo@mail.com</p>
+            <p id="descripcion">Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div >
+            <a href="XBARBER.php"><button class="btn">Atrás</button></a>
+            <a href="login_admin.php"><button class="btn">Modo administrador</button></a>
+        </div>
+        </div>
+
+        <div class="profile-edit hidden" id="modoEditor">
+            <form action="index.php" id="editForm">
+                <label for="editNombre">Nombre:</label>
+                <input type="text" id="editNombre" name="editNombre"><br>
+
+                <label for="editProfesion">Profesión:</label>
+                <input type="text" id="editProfesion" name="editProfesion"><br>
+
+                <label for="editTelefono">Teléfono:</label>
+                <input type="tel" id="editTelefono" name="editTelefono"><br>
+
+                <label for="editEmail">Correo electrónico:</label>
+                <input type="email" id="editEmail" name="editEmail"><br>
+
+                <label for="editDescripcion">Descripción:</label>
+                <textarea id="editDescripcion" name="editDescripcion" rows="4"></textarea><br>
+
+                <button type="button" id="guardarBtn" class="btn">Guardar Cambios</button>
+                <button type="button" id="cancelarBtn" class="btn">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/administrador.js"></script>
+</body>
+</html>

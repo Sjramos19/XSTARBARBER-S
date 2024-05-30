@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swp");
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(barberia-inico.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-1 {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    color: #fff;
+    width: 480px;
+    border: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    color: #fff;
+    margin: 20px 2px;
+    backdrop-filter: blur(10px);
+}
+
+.btn-1:hover{
+    background-color: #d6d6b7;
+}
+
+.btn-2 {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    color: #fff;
+    width: 480px;
+    border: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 20px 2px;
+    backdrop-filter: blur( 10px);
+}
+
+.btn-2:hover{
+    background-color:  #d6d6b7;
+}
+
+a {
+ font-family: "Poppins", sans-serif;
+ font-size: 12px;
+}
+
+img {
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+
